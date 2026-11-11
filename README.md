@@ -11,7 +11,9 @@
 - **Compact single-line values** — turns complete single-line fenced values such as paths, commands, PIDs, and log files into inline code.
 - **Plain-text fence support** — handles unlabeled blocks and `text`, `txt`, `plain`, and `plaintext` labels when they contain one value.
 - **Native code rendering** — keeps multi-line and language-labeled blocks separate, including JSON, TypeScript, Bash, and other syntax-highlighted content.
-- **Public Pi API only** — uses `registerMarkdownTransformer` without replacing Bash tools, patching Pi TUI prototypes, or taking over the header, footer, or editor.
+- **Renderer-level code blocks** — wraps Pi's private `Markdown.prototype.renderToken` with a guarded, reversible patch so fenced code blocks keep native highlighting while their visible fence rows disappear.
+- **Public transformer fallback** — uses `registerMarkdownTransformer` for single-line values and restores the native renderer if Pi's private method is unavailable.
+- **Safe lifecycle** — restores the original renderer during extension shutdown and reload, and leaves user messages, thinking, tools, header, footer, and editor outside its scope.
 - **Safe malformed-input behavior** — incomplete fences and unsupported formats pass through unchanged.
 - **No runtime dependencies** — Pi provides the host packages; the package only contains the extension and its tests.
 
