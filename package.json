@@ -1,0 +1,37 @@
+{
+  "name": "pi-content-compact",
+  "version": "0.1.0",
+  "description": "Compact assistant Markdown presentation for Pi.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "markdown",
+    "terminal-ui"
+  ],
+  "files": [
+    "extensions",
+    "src",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/pi-content-compact.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "check": "node --check extensions/pi-content-compact.ts && node --check src/markdown.ts && npm test"
+  }
+}
