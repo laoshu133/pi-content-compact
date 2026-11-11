@@ -37,10 +37,12 @@ is displayed as:
 
 Multi-line and language-labeled blocks remain separate while the comparison image shows how the renderer hides their fence rows.
 
-## Install from GitHub
+## Install
+
+Install the latest published package from npm:
 
 ```bash
-pi install git:github.com/laoshu133/pi-content-compact
+pi install npm:pi-content-compact
 ```
 
 After updating the package while Pi is running, use `/reload`.
