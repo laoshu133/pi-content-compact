@@ -39,5 +39,5 @@
     <text x="772" y="730" fill="#56d364">✓ Native Pi syntax highlighting is preserved</text>
   </g>
 
-  <text x="72" y="875" fill="#6e7681" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">Display-only transformation · Pi public Markdown transformer · no session content changes</text>
+  <text x="72" y="875" fill="#6e7681" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">Display-only renderer patch + Markdown transformer · no session content changes</text>
 </svg>

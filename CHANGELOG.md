@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.1] - 2026-11-11
+
+- Clarify the package's core features and document the fence-free assistant renderer.
+- Update the comparison image to show the current renderer behavior.
+
 ## [0.2.0] - 2026-11-11
 
 - Hide fenced code block rows while preserving Pi's native syntax highlighting.

@@ -6,16 +6,11 @@
 
 ## Key features
 
-- **Display-only transformation** — changes the Markdown passed to Pi's interactive renderer and leaves session files, model context, exports, and original messages unchanged.
-- **Assistant-only scope** — registers a transformer for `assistant` Markdown and leaves user messages, thinking blocks, tool results, and other extension surfaces alone.
-- **Compact single-line values** — turns complete single-line fenced values such as paths, commands, PIDs, and log files into inline code.
-- **Plain-text fence support** — handles unlabeled blocks and `text`, `txt`, `plain`, and `plaintext` labels when they contain one value.
-- **Native code rendering** — keeps multi-line and language-labeled blocks separate, including JSON, TypeScript, Bash, and other syntax-highlighted content.
-- **Renderer-level code blocks** — wraps Pi's private `Markdown.prototype.renderToken` with a guarded, reversible patch so fenced code blocks keep native highlighting while their visible fence rows disappear.
-- **Public transformer fallback** — uses `registerMarkdownTransformer` for single-line values and restores the native renderer if Pi's private method is unavailable.
-- **Safe lifecycle** — restores the original renderer during extension shutdown and reload, and leaves user messages, thinking, tools, header, footer, and editor outside its scope.
-- **Safe malformed-input behavior** — incomplete fences and unsupported formats pass through unchanged.
-- **No runtime dependencies** — Pi provides the host packages; the package only contains the extension and its tests.
+- **Assistant-only display** — changes terminal presentation without modifying session files, model context, exports, or original messages.
+- **Compact single-line values** — turns path, command, PID, and log values in complete single-line fences into inline code.
+- **Fence-free code blocks** — hides ` ```json `, ` ```text `, and similar wrapper rows while preserving separate blocks and Pi's native syntax highlighting.
+- **Safe private patch** — wraps `Markdown.prototype.renderToken` only for assistant content, restores the original renderer on shutdown/reload, and falls back gracefully when Pi changes its internals.
+- **Small, focused package** — uses no runtime dependencies and does not replace tools, Bash, header, footer, or editor rendering.
 
 For example, this assistant output:
 
@@ -40,7 +35,7 @@ is displayed as:
 - stdout：`/tmp/service.stdout.log`
 ````
 
-Multi-line blocks remain independent:
+Multi-line blocks remain separate and keep their language-aware highlighting. Their wrapper rows are hidden in the terminal display:
 
 ````markdown
 ```json
@@ -50,6 +45,8 @@ Multi-line blocks remain independent:
 }
 ```
 ````
+
+The source remains unchanged; only the assistant transcript presentation is compacted.
 
 ## Install from GitHub
 
