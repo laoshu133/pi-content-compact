@@ -22,8 +22,13 @@
     <text x="78" y="480" fill="#6e7681">  ```text</text>
     <text x="78" y="525" fill="#79c0ff">  /tmp/service.stdout.log</text>
     <text x="78" y="570" fill="#6e7681">  ```</text>
-    <text x="78" y="635" fill="#8b949e">Each single value keeps a full code block.</text>
-    <text x="78" y="670" fill="#8b949e">The fence rows and source blank lines remain visible.</text>
+    <text x="78" y="635" fill="#8b949e">Multi-line code block</text>
+    <text x="78" y="670" fill="#6e7681">  ```json</text>
+    <text x="78" y="705" fill="#ffab70">  {</text>
+    <text x="78" y="740" fill="#ffab70">    "event": <tspan fill="#a5d6ff">"stream.open"</tspan>,</text>
+    <text x="78" y="775" fill="#ffab70">    "id": <tspan fill="#79c0ff">103</tspan></text>
+    <text x="78" y="810" fill="#ffab70">  }</text>
+    <text x="78" y="835" fill="#6e7681">  ```</text>
 
     <text x="772" y="255" fill="#e6edf3">- 工作目录：<tspan fill="#a5d6ff">`/Users/xiaomi/works/gd-ai-fde`</tspan></text>
     <text x="772" y="300" fill="#e6edf3">- stdout：<tspan fill="#a5d6ff">`/tmp/service.stdout.log`</tspan></text>

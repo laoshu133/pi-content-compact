@@ -35,18 +35,7 @@ is displayed as:
 - stdout：`/tmp/service.stdout.log`
 ````
 
-Multi-line blocks remain separate and keep their language-aware highlighting. Their wrapper rows are hidden in the terminal display:
-
-````markdown
-```json
-{
-  "event": "stream.open",
-  "id": 103
-}
-```
-````
-
-The source remains unchanged; only the assistant transcript presentation is compacted.
+Multi-line and language-labeled blocks remain separate while the comparison image shows how the renderer hides their fence rows.
 
 ## Install from GitHub
 

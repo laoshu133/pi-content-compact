@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.2] - 2026-11-11
+
+- Show native and fence-free multi-line code blocks side by side in the README comparison image.
+- Remove the duplicated multi-line code example from the README body.
+
 ## [0.2.1] - 2026-11-11
 
 - Clarify the package's core features and document the fence-free assistant renderer.
