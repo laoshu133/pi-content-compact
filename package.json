@@ -11,6 +11,14 @@
     "markdown",
     "terminal-ui"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laoshu133/pi-content-compact.git"
+  },
+  "homepage": "https://github.com/laoshu133/pi-content-compact#readme",
+  "bugs": {
+    "url": "https://github.com/laoshu133/pi-content-compact/issues"
+  },
   "files": [
     "extensions",
     "src",
