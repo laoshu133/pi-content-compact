@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">pi-content-compact Markdown comparison</title>
+  <desc id="desc">Comparison of native Pi Markdown spacing and the compact assistant Markdown presentation.</desc>
+  <rect width="1440" height="900" fill="#0d1117"/>
+  <text x="72" y="70" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="700">pi-content-compact</text>
+  <text x="72" y="106" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18">Assistant Markdown spacing comparison</text>
+
+  <rect x="48" y="150" width="650" height="690" rx="12" fill="#161b22" stroke="#30363d"/>
+  <rect x="742" y="150" width="650" height="690" rx="12" fill="#161b22" stroke="#238636"/>
+
+  <rect x="48" y="150" width="650" height="58" rx="12" fill="#21262d"/>
+  <rect x="742" y="150" width="650" height="58" rx="12" fill="#12301f"/>
+  <text x="78" y="187" fill="#ff7b72" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="21" font-weight="700">Pi native Markdown</text>
+  <text x="772" y="187" fill="#56d364" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="21" font-weight="700">pi-content-compact</text>
+
+  <g font-family="Menlo, Monaco, Consolas, monospace" font-size="18">
+    <text x="78" y="255" fill="#e6edf3">- 工作目录：</text>
+    <text x="78" y="300" fill="#6e7681">  ```text</text>
+    <text x="78" y="345" fill="#79c0ff">  /Users/xiaomi/works/gd-ai-fde</text>
+    <text x="78" y="390" fill="#6e7681">  ```</text>
+    <text x="78" y="435" fill="#e6edf3">- stdout：</text>
+    <text x="78" y="480" fill="#6e7681">  ```text</text>
+    <text x="78" y="525" fill="#79c0ff">  /tmp/service.stdout.log</text>
+    <text x="78" y="570" fill="#6e7681">  ```</text>
+    <text x="78" y="635" fill="#8b949e">Each single value keeps a full code block.</text>
+    <text x="78" y="670" fill="#8b949e">The fence rows and source blank lines remain visible.</text>
+
+    <text x="772" y="255" fill="#e6edf3">- 工作目录：<tspan fill="#a5d6ff">`/Users/xiaomi/works/gd-ai-fde`</tspan></text>
+    <text x="772" y="300" fill="#e6edf3">- stdout：<tspan fill="#a5d6ff">`/tmp/service.stdout.log`</tspan></text>
+    <text x="772" y="365" fill="#8b949e">Single-line plain values become inline code.</text>
+    <text x="772" y="400" fill="#8b949e">Separate multi-line blocks stay separate.</text>
+
+    <text x="772" y="475" fill="#6e7681">```json</text>
+    <text x="772" y="515" fill="#ffab70">{</text>
+    <text x="772" y="550" fill="#ffab70">  "event": <tspan fill="#a5d6ff">"stream.open"</tspan>,</text>
+    <text x="772" y="585" fill="#ffab70">  "id": <tspan fill="#79c0ff">103</tspan></text>
+    <text x="772" y="620" fill="#ffab70">}</text>
+    <text x="772" y="660" fill="#6e7681">```</text>
+    <text x="772" y="730" fill="#56d364">✓ Native Pi syntax highlighting is preserved</text>
+  </g>
+
+  <text x="72" y="875" fill="#6e7681" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">Display-only transformation · Pi public Markdown transformer · no session content changes</text>
+</svg>
